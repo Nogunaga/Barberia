@@ -1,0 +1,118 @@
+body{
+   font-family: 'Roboto', sans-serif;
+   background-image: url(imagenes/productos.jpg);
+   background-size: 100% 100%;
+   background-attachment: fixed;
+}
+header {
+   
+    color:white;
+  
+}
+
+.caja{
+    width: 800px;
+    position: relative;
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute;
+    top:110px;
+    right: 0;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+nav a:hover{
+    color:black;
+    text-decoration: underline;
+}
+.productos{
+    width:940px;
+    margin:0 auto;
+    padding:50px;
+    background: rgba(231, 232, 235, 0.801);
+    border-radius:10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0)
+    
+
+}
+.productos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid  rgba(176, 192, 183, 0.438);
+    border-radius: 10px;
+    
+}
+.productos li:hover{
+    border-color: black;
+}
+.productos li:active{
+    border-color: rgb(238, 255, 4);
+}
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;
+    color:rgba(161, 110, 52, 0.925);
+
+}
+.productos li:hover h2{
+    font-size: 33px;
+}
+.producto-descripcion{
+    font-size: 18px;
+    color:rgba(161, 110, 52, 0.925);
+}
+
+img {
+    opacity: 1; /* Imagen completamente opaca */
+    /* transition: opacity 0.3s ease; Transición suave */
+  }
+.producto-precio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+footer{
+    text-align: center;
+    background-size: cover;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    padding-bottom:20px;
+}
+.copyrigth{
+    color:white;
+    font-style:13px;
+    margin:20px;
+}
+
+@media screen and (max-width:480px){
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+    .caja, .productos {
+        width: auto;
+    }
+
+    }
+    footer{ width:auto;}
+  
